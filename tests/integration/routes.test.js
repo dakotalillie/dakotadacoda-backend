@@ -1,6 +1,7 @@
 const request = require('supertest');
 
-jest.mock('../../utils/sendMail.js');
+jest.mock('../../utils/sendMail');
+jest.mock('../../utils/logger');
 
 describe('POST /api/v1', () => {
 

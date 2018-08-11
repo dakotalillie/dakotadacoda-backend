@@ -3,6 +3,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
+  "name": "Benedict Cumberbatch",
   "email": "dakota@email.com",
   "subject": "hello there",
   "text": "this is a test"

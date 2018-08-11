@@ -14,7 +14,7 @@ Start the app:
 yarn start
 ```
 
-Test the app:
+Run the tests:
 
 ```bash
 yarn test
