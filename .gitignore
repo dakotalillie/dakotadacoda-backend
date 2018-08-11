@@ -2,3 +2,5 @@
 
 config/test.json
 config/development.json
+
+logs.log
