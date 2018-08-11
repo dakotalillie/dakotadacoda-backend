@@ -1,0 +1,22 @@
+{
+  "name": "dakotadacoda-backend",
+  "version": "0.0.1",
+  "description": "Backend for dakotadacoda.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "nodemon app.js"
+  },
+  "author": "Dakota Lillie",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.3.0",
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.7"
+  }
+}
