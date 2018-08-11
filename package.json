@@ -4,7 +4,7 @@
   "description": "Backend for dakotadacoda.com",
   "main": "app.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest -i --watchAll",
     "start": "nodemon app.js"
   },
   "author": "Dakota Lillie",

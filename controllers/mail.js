@@ -1,7 +1,7 @@
 const { transporter } = require('../app');
 
 function sendEmail(req, res) {
-  res.send();
+  res.send(req.body);
 }
 
 module.exports = {
