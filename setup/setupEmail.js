@@ -17,6 +17,6 @@ module.exports = async function setupEmail() {
     await transporter.verify();
     return transporter;
   } catch (err) {
-    throw new Error('email configuration failed: ' + err);
+    throw new Error('Error setting up transporter');
   }
 };

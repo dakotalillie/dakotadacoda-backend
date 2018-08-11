@@ -1,4 +1,5 @@
 {
-  "user": "dakotadacoda_server_username",
-  "pass": "dakotadacoda_server_pass"
+  "user": "dakotadacoda_server_user",
+  "pass": "dakotadacoda_server_pass",
+  "email": "dakotadacoda_server_email"
 }

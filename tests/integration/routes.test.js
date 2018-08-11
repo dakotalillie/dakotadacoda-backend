@@ -4,8 +4,7 @@ describe('POST /api/v1', () => {
 
   let server;
   beforeEach(async () => {
-    const res = await require('../../app');
-    server = res.server;
+    server = require('../../app').server;
   });
 
   afterEach(() => {

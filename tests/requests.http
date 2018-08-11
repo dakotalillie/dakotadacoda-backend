@@ -6,5 +6,5 @@ Accept: application/json
   "name": "Dakota",
   "email": "dakota@email.com",
   "subject": "hello there",
-  "message": "this is a test"
+  "text": "this is a test"
 }

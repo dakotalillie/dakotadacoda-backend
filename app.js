@@ -7,16 +7,8 @@ const setupApp = require('./setup');
 
 const PORT = config.get('port');
 
-async function runApp() {
-  try {
-    const app = express();
-    const transporter = await setupApp(app);
-    const server = app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
-    return { transporter, server };
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
-}
+const app = express();
+setupApp(app);
+const server = app.listen(PORT, () => console.log(`app listening on port ${PORT}`));
 
-module.exports = runApp();
+module.exports = server;
