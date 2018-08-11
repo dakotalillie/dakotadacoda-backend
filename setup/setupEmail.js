@@ -6,8 +6,7 @@ module.exports = async function setupEmail() {
   const password = config.get('pass');
 
   if (!username || !password) {
-    console.error('username and password environment variables must be set');
-    process.exit(1);
+    throw new Error('username and password environment variables must be set');
   }
 
   const transporter = nodemailer.createTransport(

@@ -1,8 +1,12 @@
 const express = require('express');
 
-module.exports = function setupApp(app) {
+module.exports = async function setupApp(app) {
   app.use(express.json());
   require('../routes')(app);
-  const transporter = require('./setupEmail')();
-  return transporter;
+  try {
+    const transporter = await require('./setupEmail')();
+    return transporter;
+  } catch (err) {
+    throw err;
+  }
 };
