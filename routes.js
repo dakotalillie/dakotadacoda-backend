@@ -1,9 +1,13 @@
 'use strict';
 
-const mailController = require('./controllers/mail');
+const config = require('config');
 
-const BASE = '/api/v1';
+const mailController = require('./controllers/mail');
+const healthcheckController = require('./controllers/healthcheck');
+
+const root = config.get('root');
 
 module.exports = function configureRoutes(app) {
-  app.use(`${BASE}`, mailController);
+  app.use(`${root}`, mailController);
+  app.use(`${root}/healthcheck`, healthcheckController);
 };
