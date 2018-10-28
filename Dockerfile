@@ -14,6 +14,6 @@ COPY . .
 
 ENV NODE_ENV=production
 
-EXPOSE 3001
+EXPOSE 5001
 
 CMD ["yarn", "start"]
